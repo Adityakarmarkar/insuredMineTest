@@ -1,0 +1,2 @@
+# insuredMineTest
+Test for InsuredMine
