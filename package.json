@@ -1,0 +1,27 @@
+{
+  "name": "insuredmine",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "start-server": "pm2 start app.js --name insuredmine-app",
+    "stop-server": "pm2 stop insuredmine-app",
+    "restart-server": "pm2 restart insuredmine-app",
+    "logs": "pm2 logs insuredmine-app --lines 100"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "debug": "~2.6.9",
+    "dotenv": "^17.2.3",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mongoose": "^8.19.4",
+    "morgan": "~1.9.1",
+    "multer": "^2.0.2",
+    "node-schedule": "^2.1.1",
+    "os-utils": "^0.0.14"
+  }
+}
