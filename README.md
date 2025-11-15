@@ -325,3 +325,11 @@ Uses node-schedule for precise job scheduling:
 3. Job executes at scheduled time
 4. Message status updated to "inserted"
 5. Timestamp recorded in database
+
+
+
+### Dry Run Testing
+
+For testing purposes, the threshold was set at 10%, and the stress-cpu API was used to increase the server load.
+
+![Screenshot](https://github.com/Adityakarmarkar/insuredMineTest/blob/1aa114ca3d2d58cb0991f3ada491b1322f82dc08/images/Screenshot%202025-11-16%20at%2012.41.26%E2%80%AFAM.png)
