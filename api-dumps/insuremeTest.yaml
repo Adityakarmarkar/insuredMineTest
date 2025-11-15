@@ -1,0 +1,194 @@
+type: collection.insomnia.rest/5.0
+name: Test
+meta:
+  id: wrk_8892ee4afd5a452ea45829b61d29ea2e
+  created: 1763200398984
+  modified: 1763200398984
+  description: ""
+collection:
+  - name: insuredMine
+    meta:
+      id: fld_37512c9ee8e54bf38db790c6a20b5a3f
+      created: 1763200416799
+      modified: 1763200416799
+      sortKey: -1763200416799
+      description: ""
+    children:
+      - url: http://localhost:7001/taskone/upload
+        name: upload CSV
+        meta:
+          id: req_fdc4850c7dfb4a85afce9c0ad821dfad
+          created: 1763200419882
+          modified: 1763207820675
+          isPrivate: false
+          description: ""
+          sortKey: -1763200419882
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f73e5060d3c44ffdb2d991628b87efcb
+              name: file
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: /Users/adityakarmarkar/Downloads/data-sheet - Node js Assesment (2)
+                (1).csv
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:7001/taskone/policy?username=Lura
+        name: get policy
+        meta:
+          id: req_d9fe25b9a08a43188c81a858d14661e1
+          created: 1763207473932
+          modified: 1763207802436
+          isPrivate: false
+          description: ""
+          sortKey: -1762816310522
+        method: GET
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f73e5060d3c44ffdb2d991628b87efcb
+              name: file
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: /Users/adityakarmarkar/Downloads/data-sheet - Node js Assesment (2)
+                (1).csv
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:7001/taskone/aggregated-policies
+        name: aggregated-policies
+        meta:
+          id: req_07beb65bbbcd4f519c8f8e6e3a4e4622
+          created: 1763207946886
+          modified: 1763207950089
+          isPrivate: false
+          description: ""
+          sortKey: -1762624255842
+        method: GET
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f73e5060d3c44ffdb2d991628b87efcb
+              name: file
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: /Users/adityakarmarkar/Downloads/data-sheet - Node js Assesment (2)
+                (1).csv
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:7001/tasktwo/cpu-stats
+        name: cpu-stats
+        meta:
+          id: req_d3d512eca3644a90ae99b97caa5b80a2
+          created: 1763208669555
+          modified: 1763208676760
+          isPrivate: false
+          description: ""
+          sortKey: -1762528228502
+        method: GET
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_f73e5060d3c44ffdb2d991628b87efcb
+              name: file
+              value: ""
+              description: ""
+              disabled: false
+              type: file
+              fileName: /Users/adityakarmarkar/Downloads/data-sheet - Node js Assesment (2)
+                (1).csv
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.6.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:7001/tasktwo/schedule-message
+        name: schedule messege
+        meta:
+          id: req_d71f5702fb4942d3b37cba64910811d8
+          created: 1763231854935
+          modified: 1763232277644
+          isPrivate: false
+          description: ""
+          sortKey: -1763231854935
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {     
+            	"message": "Hello World!",     
+            	"day": "2025-11-16",     
+            	"time": "00:20:00"   
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_db659226a674f1eaff00bfaaee7335afe6423e13
+    created: 1763200398986
+    modified: 1763200398986
+environments:
+  name: Base Environment
+  meta:
+    id: env_db659226a674f1eaff00bfaaee7335afe6423e13
+    created: 1763200398986
+    modified: 1763200398986
+    isPrivate: false
